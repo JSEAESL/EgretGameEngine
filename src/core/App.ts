@@ -23,7 +23,7 @@ class App {
      * @type {Http}
      */
     public static get Http(): Http {
-        return Http.getSingtonInstance();
+        return Http.getSingtonInstance(Http);
     }
 
     /**
@@ -31,7 +31,7 @@ class App {
      * @type {null}
      */
     public static get Socket(): Socket {
-        return Socket.getSingtonInstance();
+        return Socket.getSingtonInstance(Socket);
     }
 
     /**
@@ -39,7 +39,7 @@ class App {
      * @type {ControllerManager}
      */
     public static get ControllerManager(): ControllerManager {
-        return ControllerManager.getSingtonInstance();
+        return ControllerManager.getSingtonInstance(ControllerManager);
     }
 
     /**
@@ -47,7 +47,7 @@ class App {
      * @type {ViewManager}
      */
     public static get ViewManager(): ViewManager {
-        return ViewManager.getSingtonInstance();
+        return ViewManager.getSingtonInstance(ViewManager);
     }
 
     /**
@@ -55,7 +55,7 @@ class App {
      * @type {SceneManager}
      */
     public static get SceneManager(): SceneManager {
-        return SceneManager.getSingtonInstance();
+        return SceneManager.getSingtonInstance(SceneManager);
     }
 
     /**
@@ -63,7 +63,7 @@ class App {
      * @type {DebugUtils}
      */
     public static get DebugUtils(): DebugUtils {
-        return DebugUtils.getSingtonInstance();
+        return DebugUtils.getSingtonInstance(DebugUtils);
     }
 
     /**
@@ -71,7 +71,7 @@ class App {
      * @type {MessageCenter}
      */
     public static get MessageCenter(): MessageCenter {
-        return MessageCenter.getSingtonInstance(0);
+        return MessageCenter.getSingtonInstance(MessageCenter,0);
     }
 
     /**
@@ -79,7 +79,7 @@ class App {
      * @type {TimerManager}
      */
     public static get TimerManager(): TimerManager {
-        return TimerManager.getSingtonInstance();
+        return TimerManager.getSingtonInstance(TimerManager);
     }
 
     /**
@@ -87,7 +87,7 @@ class App {
      * @type {DateUtils}
      */
     public static get DateUtils(): DateUtils {
-        return DateUtils.getSingtonInstance();
+        return DateUtils.getSingtonInstance(DateUtils);
     }
 
     /**
@@ -95,7 +95,7 @@ class App {
      * @type {MathUtils}
      */
     public static get MathUtils(): MathUtils {
-        return MathUtils.getSingtonInstance();
+        return MathUtils.getSingtonInstance(MathUtils);
     }
 
     /**
@@ -103,7 +103,7 @@ class App {
      * @type {RandomUtils}
      */
     public static get RandomUtils(): RandomUtils {
-        return RandomUtils.getSingtonInstance();
+        return RandomUtils.getSingtonInstance(RandomUtils);
     }
 
     /**
@@ -111,112 +111,112 @@ class App {
      * @type {DisplayUtils}
      */
     public static get DisplayUtils(): DisplayUtils {
-        return DisplayUtils.getSingtonInstance();
+        return DisplayUtils.getSingtonInstance(DisplayUtils);
     }
 
     /*
      * 图片合成数字工具类
      * */
     public static get BitmapNumber(): BitmapNumber {
-        return BitmapNumber.getSingtonInstance();
+        return BitmapNumber.getSingtonInstance(BitmapNumber);
     }
 
     /**
      * 引导工具类
      */
     public static get GuideUtils(): GuideUtils {
-        return GuideUtils.getSingtonInstance();
+        return GuideUtils.getSingtonInstance(GuideUtils);
     }
 
     /**
      * Stage操作相关工具类
      */
     public static get StageUtils(): StageUtils {
-        return StageUtils.getSingtonInstance();
+        return StageUtils.getSingtonInstance(StageUtils);
     }
 
     /**
      * Effect工具类
      */
     public static get EffectUtils(): EffectUtils {
-        return EffectUtils.getSingtonInstance();
+        return EffectUtils.getSingtonInstance(EffectUtils);
     }
 
     /**
      * 字符串工具类
      */
     public static get StringUtils(): StringUtils {
-        return StringUtils.getSingtonInstance();
+        return StringUtils.getSingtonInstance(StringUtils);
     }
 
     /**
      * 通过工具类
      */
     public static get CommonUtils(): CommonUtils {
-        return CommonUtils.getSingtonInstance();
+        return CommonUtils.getSingtonInstance(CommonUtils);
     }
 
     /**
      * 音乐管理类
      */
     public static get SoundManager(): SoundManager {
-        return SoundManager.getSingtonInstance();
+        return SoundManager.getSingtonInstance(SoundManager);
     }
 
     /**
      * 设备工具类
      */
     public static get DeviceUtils(): DeviceUtils {
-        return DeviceUtils.getSingtonInstance();
+        return DeviceUtils.getSingtonInstance(DeviceUtils);
     }
 
     /**
      * 引擎扩展类
      */
     public static get EgretExpandUtils(): EgretExpandUtils {
-        return EgretExpandUtils.getSingtonInstance();
+        return EgretExpandUtils.getSingtonInstance(EgretExpandUtils);
     }
 
     /**
      * 键盘操作工具类
      */
     public static get KeyboardUtils(): KeyboardUtils {
-        return KeyboardUtils.getSingtonInstance();
+        return KeyboardUtils.getSingtonInstance(KeyboardUtils);
     }
 
     /**
      * 摇杆操作工具类
      */
     public static get RockerUtils(): RockerUtils {
-        return RockerUtils.getSingtonInstance();
+        return RockerUtils.getSingtonInstance(RockerUtils);
     }
 
     /**
      * 震动类
      */
     public static get ShockUtils(): ShockUtils {
-        return ShockUtils.getSingtonInstance();
+        return ShockUtils.getSingtonInstance(ShockUtils);
     }
 
     /**
      * 资源加载工具类
      */
     public static get ResourceUtils(): ResourceUtils {
-        return ResourceUtils.getSingtonInstance();
+        return ResourceUtils.getSingtonInstance(ResourceUtils);
     }
 
     /**
      * RenderTextureManager
      */
     public static get RenderTextureManager(): RenderTextureManager {
-        return RenderTextureManager.getSingtonInstance();
+        return RenderTextureManager.getSingtonInstance(RenderTextureManager);
     }
 
     /**
      * TextFlow
      */
     public static get TextFlowMaker(): TextFlowMaker {
-        return TextFlowMaker.getSingtonInstance();
+        return TextFlowMaker.getSingtonInstance(TextFlowMaker);
     }
 
     /**
@@ -238,7 +238,7 @@ class App {
      * @constructor
      */
     public static get DelayOptManager(): DelayOptManager {
-        return DelayOptManager.getSingtonInstance();
+        return DelayOptManager.getSingtonInstance(DelayOptManager);
     }
 
     /**
@@ -247,7 +247,7 @@ class App {
      * @constructor
      */
     public static get ArrayUtils(): ArrayUtils {
-        return ArrayUtils.getSingtonInstance();
+        return ArrayUtils.getSingtonInstance(ArrayUtils);
     }
 
     /**
@@ -256,7 +256,7 @@ class App {
      * @constructor
      */
     public static get EasyLoading(): EasyLoading {
-        return EasyLoading.getSingtonInstance();
+        return EasyLoading.getSingtonInstance(EasyLoading);
     }
 
     /**
@@ -265,7 +265,7 @@ class App {
      * @constructor
      */
     public static get DragonBonesFactory(): DragonBonesFactory {
-        return DragonBonesFactory.getSingtonInstance();
+        return DragonBonesFactory.getSingtonInstance(DragonBonesFactory);
     }
 
     /**
@@ -274,35 +274,35 @@ class App {
      * @constructor
      */
     public static get StarlingSwfFactory(): StarlingSwfFactory {
-        return StarlingSwfFactory.getSingtonInstance();
+        return StarlingSwfFactory.getSingtonInstance(StarlingSwfFactory);
     }
 
     /**
      * AnchorUtils工具类
      */
     public static get AnchorUtils(): AnchorUtils {
-        return AnchorUtils.getSingtonInstance();
+        return AnchorUtils.getSingtonInstance(AnchorUtils);
     }
 
     /**
      * hack引擎的Touch事件
      */
     public static get TouchEventHook(): TouchEventHook {
-        return TouchEventHook.getSingtonInstance();
+        return TouchEventHook.getSingtonInstance(TouchEventHook);
     }
 
     /**
      * H5地址栏参数操作工作类
      */
     public static get LocationPropertyUtils(): LocationPropertyUtils {
-        return LocationPropertyUtils.getSingtonInstance();
+        return LocationPropertyUtils.getSingtonInstance(LocationPropertyUtils);
     }
 
     /**
      * Tween工具类
      */
     public static get TweenUtils(): TweenUtils {
-        return TweenUtils.getSingtonInstance();
+        return TweenUtils.getSingtonInstance(TweenUtils);
     }
 
     /**

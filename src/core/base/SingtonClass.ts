@@ -2,20 +2,16 @@
  * Created by yangsong on 14/12/18.
  * 基类
  */
-class SingtonClass {
+class SingtonClass<T> {
     public constructor() {
 
     }
 
-    /**
-     * 获取一个单例
-     * @returns {any}
-     */
-    public static getSingtonInstance(...param: any[]): any {
-        let Class: any = this;
-        if (!Class._instance) {
-            Class._instance = new Class(...param);
+    private static _instance: any = null;
+    public static getSingtonInstance<T>(c: { new(...param): T }, ...param: any[]): T {
+        if (this._instance == null) {
+            this._instance = new c(...param);
         }
-        return Class._instance;
+        return this._instance;
     }
 }

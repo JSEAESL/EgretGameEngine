@@ -2,7 +2,7 @@
  * Created by yangsong on 2014/11/22.
  * Http请求处理
  */
-class Http extends SingtonClass {
+class Http extends SingtonClass<Http> {
     private _serverUrl:string;
     private _urlLoader:egret.URLLoader;
     private _request:egret.URLRequest;

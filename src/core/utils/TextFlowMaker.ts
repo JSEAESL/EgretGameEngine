@@ -1,7 +1,7 @@
 /**
  * Created by Saco on 2015/10/26.
  */
-class TextFlowMaker extends SingtonClass {
+class TextFlowMaker extends SingtonClass<TextFlowMaker> {
     private STYLE_COLOR: string = "C";
     private STYLE_SIZE: string = "S";
     private PROP_TEXT: string = "T";

@@ -1,7 +1,7 @@
 /**
  * Created by yangsong on 2014/11/23.
  */
-class RandomUtils extends SingtonClass {
+class RandomUtils extends SingtonClass<RandomUtils> {
     /**
      * 获取一个区间的随机数
      * @param $from 最小值

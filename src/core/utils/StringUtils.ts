@@ -2,7 +2,7 @@
  * Created by yangsong on 14/12/18.
  * 字符串操作工具类
  */
-class StringUtils extends SingtonClass {
+class StringUtils extends SingtonClass<StringUtils> {
     /**
      * 构造函数
      */

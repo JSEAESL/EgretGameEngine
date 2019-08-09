@@ -2,7 +2,7 @@
  * Created by yangsong on 15-1-14.
  * Sound管理类
  */
-class SoundManager extends SingtonClass {
+class SoundManager extends SingtonClass<SoundManager> {
     /**
      * 音乐文件清理时间
      * @type {number}

@@ -1,7 +1,7 @@
 /**
  * Tween工具类
  */
-class TweenUtils extends SingtonClass {
+class TweenUtils extends SingtonClass<TweenUtils> {
     public constructor() {
         super();
     }

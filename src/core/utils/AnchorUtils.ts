@@ -1,7 +1,7 @@
 /**
  * Created by Saco on 2015/9/16.
  */
-class AnchorUtils extends SingtonClass {
+class AnchorUtils extends SingtonClass<AnchorUtils> {
     private _propertyChange: any;
     private _anchorChange: any;
 

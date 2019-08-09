@@ -2,7 +2,7 @@
  * Created by yangsong on 2014/12/3.
  * 各种效果工具类
  */
-class EffectUtils extends SingtonClass {
+class EffectUtils extends SingtonClass<EffectUtils> {
     /**
      * 构造函数
      */

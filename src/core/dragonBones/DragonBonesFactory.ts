@@ -2,7 +2,7 @@
  * Created by egret on 15-1-14.
  * DragonBones工厂类
  */
-class DragonBonesFactory extends SingtonClass {
+class DragonBonesFactory extends SingtonClass<DragonBonesFactory> {
     private averageUtils: AverageUtils;
     private factory: dragonBones.EgretFactory;
     private isPlay: boolean;

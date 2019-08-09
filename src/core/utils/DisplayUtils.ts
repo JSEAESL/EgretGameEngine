@@ -2,7 +2,7 @@
  * Created by yangsong on 2014/11/24.
  * 显示对象工具类
  */
-class DisplayUtils extends SingtonClass {
+class DisplayUtils extends SingtonClass<DisplayUtils> {
     /**
      * 构造函数
      */

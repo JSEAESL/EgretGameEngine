@@ -1,7 +1,7 @@
 /**
  * Created by yangsong on 15-1-20.
  */
-class DeviceUtils extends SingtonClass {
+class DeviceUtils extends SingtonClass<DeviceUtils> {
 
     public static OS_IOS: string = "ios";
     public static OS_Android: string = "android";

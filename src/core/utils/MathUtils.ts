@@ -2,7 +2,7 @@
  * Created by yangsong on 2014/11/22.
  * 数学计算工具类
  */
-class MathUtils extends SingtonClass {
+class MathUtils extends SingtonClass<MathUtils> {
     /**
      * 弧度制转换为角度值
      * @param radian 弧度制

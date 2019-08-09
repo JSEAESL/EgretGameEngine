@@ -1,4 +1,4 @@
-class ViewManager extends SingtonClass {
+class ViewManager extends SingtonClass<ViewManager> {
     /**
      * 已注册的UI
      */

@@ -5,7 +5,7 @@
  * 封装Group的加载
  * 增加静默加载机制
  */
-class ResourceUtils extends SingtonClass {
+class ResourceUtils extends SingtonClass<ResourceUtils> {
     private _configs: Array<any>;
     private _onConfigComplete: Function;
     private _onConfigCompleteTarget: any;

@@ -2,7 +2,7 @@
  * Created by yangsong on 2014/11/22.
  * Date工具类
  */
-class DateUtils extends SingtonClass {
+class DateUtils extends SingtonClass<DateUtils> {
     public constructor() {
         super();
     }

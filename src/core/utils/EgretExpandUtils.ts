@@ -2,7 +2,7 @@
  * Created by yangsong on 15-1-23.
  * 引擎扩展类
  */
-class EgretExpandUtils extends SingtonClass {
+class EgretExpandUtils extends SingtonClass<EgretExpandUtils> {
     /**
      * 构造函数
      */

@@ -2,7 +2,7 @@
  * Created by yangsong on 15-1-12.
  * 通用工具类
  */
-class CommonUtils extends SingtonClass {
+class CommonUtils extends SingtonClass<CommonUtils> {
     public constructor() {
         super();
     }

@@ -2,7 +2,7 @@
  * Created by yangsong on 2014/6/16.
  * StarlingSwf工厂类
  */
-class StarlingSwfFactory extends SingtonClass {
+class StarlingSwfFactory extends SingtonClass<StarlingSwfFactory> {
 
     private swfAssetsManager:starlingswf.SwfAssetManager;
     private swfAssetsNames:Array<string>;
